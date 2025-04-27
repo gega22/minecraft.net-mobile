@@ -54,6 +54,7 @@ a:hover {
     border-radius: 5px;
     color: blue;
     margin-top: 30px;
+    margin-bottom: 99px;
 }
 .btn2{
     font-size: 2rem;
@@ -62,7 +63,7 @@ a:hover {
     border: 10px;
     border-radius: 5px;
     color: blue;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .btn3{
     font-size: 2rem;
@@ -147,30 +148,12 @@ a:hover {
           0 0 21px hsl(180, 100%, 60%);
         font-size: 3em;
       }
-      .turn-off {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        padding: 10px 20px;
-        font-size: 18px;
-        background-color: red;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        transition: background-color 0.3s ease;
-      }
-      
-      .turn-off:hover {
-        background-color: orange;
-      }
   
   .button.turn-on.active {
-    background-color: #28a745;
+    background-color: #00ee38d5;
   }
   .announcement {
-    background-color: red;
+    background-color: rgba(153, 205, 50, 0.658); 
     padding: 10px;
 }
 
@@ -198,3 +181,30 @@ a:hover {
     color: silver;
   }
 
+  .carousel-container {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+
+.carousel {
+    display: flex;
+    width: 4002%; 
+    transition: transform 5s ease-in-out;
+}
+
+.carousel img, .blank {
+    width: 250px; 
+    height: 250px;
+    flex-shrink: 0;
+    object-fit: contain; 
+    background: aqua;
+}
